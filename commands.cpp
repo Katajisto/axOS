@@ -1,11 +1,17 @@
 #include<Arduino.h>
 #include "screen.h"
 #include "sys.h"
-String helpArr[10] = {"help - show help","print - print str","hangman - play game","","","","","","",""};
+#include <StandardCplusplus.h>
+
+#include <string>
+#include <vector>
+#include <iterator>
+using namespace std;
+String helpArr[10] = {"help - show help","print - print str","hangman - play game","wolf - text editor","","","","","",""};
 
 void help()
 {
-  for(int i = 0; i < 3; i++)
+  for(int i = 0; i < 4; i++)
   {
     cout(helpArr[i]);
     delay(1000);
@@ -50,5 +56,15 @@ void hangman(String s)
   won:
   cout(s);
   cout("You won");
+}
+void wolf()
+{
+  vector<String> program;
+  String tempLine;
+  while(tempLine != "STOP")
+  {
+    tempLine = cin();
+    program.push_back(tempLine);
+  }
 }
 

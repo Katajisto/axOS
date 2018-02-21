@@ -11,6 +11,9 @@ axOS stands for axOS Operating System.
 - [ ] Maybe internet access?
 
 ## What do you need to use this.
+
+First requirement is the https://github.com/maniacbug/StandardCplusplus library. I use it for vectors and proper strings.
+
 This project consists of electrical stuff ordered from Ebay. You can put this together fairly cheaply. 
 
 You need an arduino compatible display (My version uses a 4 rows and 20 colums display, with a I2C controller) You also need a legit arduino, or a chinese knock-off. I personally use the knock-off as I can get 10 of those for the price for the price of an genuine arduino. Everything should work on a genuine one as well. Later you'll probably need a ps/2 adapter and an old keyboard.
