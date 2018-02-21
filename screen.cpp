@@ -7,6 +7,7 @@ void clearScr()
 {
   for(int i = 0; i < 4; i++)
   {
+    screenArr[i] = "";
     lcd.setCursor(0,i);
     lcd.print("                      ");
   }
@@ -53,9 +54,6 @@ void initscr()
   }
   lcd.begin();
   lcd.backlight();
-  lcd.print("Starting serial read");
-  Serial.begin(115200);
-  delay(500);
   clearScr();
   cout("axOS v.0.2 GNU GPL 3");
   cout("\"help\" for help.");

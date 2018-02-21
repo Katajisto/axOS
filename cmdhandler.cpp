@@ -13,8 +13,6 @@ void cmdHandler(String cmd)
     command += cmd[i];
   }
   cmd.remove(0,command.length()+1);
-  Serial.println(command);
-  Serial.println(cmd);
   if(command == "help")
   {
     help();
@@ -23,5 +21,9 @@ void cmdHandler(String cmd)
   {
     //Serial.println("TRIED TO CALL SYS_PRINT");
     sys_print(cmd);
+  }
+  if(command == "hangman")
+  {
+    hangman(cmd);
   }
 }
