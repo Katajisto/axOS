@@ -19,7 +19,7 @@ void cmdHandler(String cmd)
   {
     help();
   }
-  if(cmd == "print")
+  if(command == "print")
   {
     //Serial.println("TRIED TO CALL SYS_PRINT");
     sys_print(cmd);

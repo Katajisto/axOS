@@ -13,6 +13,6 @@ void help()
 void sys_print(String s)
 {
   //Serial.println("sys_print called");
-  cout("ASD");
+  cout(s);
 }
 
