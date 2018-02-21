@@ -20,6 +20,8 @@ void clearln(int ln)
 
 void cout(String s)
 {
+  //Serial.println("PRINT ASKED FOR: ");
+  //Serial.println(s);
   for(int i = 0; i < 4; i++)
   {
     if(screenArr[i] == "")

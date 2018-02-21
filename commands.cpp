@@ -10,3 +10,9 @@ void help()
     delay(1000);
   }
 }
+void sys_print(String s)
+{
+  //Serial.println("sys_print called");
+  cout("ASD");
+}
+
