@@ -6,7 +6,7 @@ axOS stands for axOS Operating System.
 ## Features at the moment
 - [x] Print text to a screen and take in commands.
 - [ ] Be able to use a keyboard.
-- [ ] Compiler.
+- [X] Interpreter.
 - [ ] Text editor.
 - [ ] Maybe internet access?
 
