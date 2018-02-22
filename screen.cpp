@@ -1,6 +1,7 @@
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 #include <Arduino.h>
+#include "sys.h"
 LiquidCrystal_I2C lcd(0x3F,20,4);
 String screenArr[4];
 void clearScr()
@@ -55,7 +56,7 @@ void initscr()
   lcd.begin();
   lcd.backlight();
   clearScr();
-  cout("axOS v.0.2 GNU GPL 3");
+  cout("axOS v"+ get_version() + " GNU GPL 3");
   cout("\"help\" for help.");
 }
 

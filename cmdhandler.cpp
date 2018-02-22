@@ -2,6 +2,7 @@
 #include <Arduino.h>
 #include "commands.h"
 #include "screen.h"
+#include "interpreter.h"
 void cmdHandler(String cmd)
 {
   //Split the commmand into the command, and its argumets.
@@ -25,5 +26,17 @@ void cmdHandler(String cmd)
   if(command == "hangman")
   {
     hangman(cmd);
+  }
+  if(command == "wolf")
+  {
+    wolf();
+  }
+  if(command == "wolftest")
+  {
+    vector<String> testprg;
+    testprg.push_back("PRINT HELLO WORLD");
+    testprg.push_back("GOTO 1");
+    testprg.push_back("DELAY 100");
+    system_run(testprg);
   }
 }

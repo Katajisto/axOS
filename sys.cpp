@@ -1,4 +1,9 @@
 #include <Arduino.h>
+String sys_version = "0.3";
+String get_version()
+{
+  return sys_version;
+}
 void initSerial()
 {
   Serial.begin(115200);

@@ -2,10 +2,10 @@
 #include "screen.h"
 #include "sys.h"
 #include <StandardCplusplus.h>
-
 #include <string>
 #include <vector>
 #include <iterator>
+#include "interpreter.h"
 using namespace std;
 String helpArr[10] = {"help - show help","print - print str","hangman - play game","wolf - text editor","","","","","",""};
 
@@ -64,7 +64,9 @@ void wolf()
   while(tempLine != "STOP")
   {
     tempLine = cin();
+    cout(tempLine);
     program.push_back(tempLine);
   }
+  system_run(program);
 }
 
